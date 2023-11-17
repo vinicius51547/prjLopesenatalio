@@ -1,0 +1,35 @@
+// Mixin para telas pequenas
+@mixin mobile-gf {
+  @media (max-width: 300px) {
+    @content;
+  }
+}
+
+// Mixin para telas cerlulares
+@mixin mobile-screen {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+// Mixin para telas médias
+@mixin tablet-screen {
+  @media (max-width: 920px) {
+    @content;
+  }
+}
+
+// Mixin para telas grandes
+@mixin large-screen {
+  @media (max-width: 1167px) {
+    @content;
+  }
+}
+
+// Mixin para os Cards
+
+@mixin card-500 {
+  @media (min-width: 500px) {
+    @content;
+  }
+}

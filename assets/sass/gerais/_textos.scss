@@ -1,0 +1,74 @@
+// Titulo
+.title {
+    position: relative;
+    font-size: $font-size-large;
+    font-weight: bold;
+    color: #000;
+    text-transform: none;
+    
+
+    &.btt {
+        margin-bottom: 20px;
+    }
+
+    &.left {
+        text-align: left;
+    }
+    
+    &.center {
+        text-align: center;
+    }
+    
+    @include mobile-screen {
+        font-size: $font-size-medium;
+    }
+
+}
+
+
+.sub-title {
+    position: relative;
+    font-size: $font-size-base;
+    font-weight: bold;
+    color: $primary-color;
+    // text-align: center;
+    text-transform: none;
+    padding-left: 40px;
+
+    &.left {
+        text-align: left;
+    }
+
+    @include mobile-screen {
+        font-size: $font-size-base;
+    }
+
+}
+
+.sub-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 1px;
+    width: 30px;
+    background: $primary-color;
+}
+
+
+
+
+// Textos
+.text {
+    font-size: $font-size-small;
+    color: #5e5e5e;
+
+    &.white {
+        color: #fff;
+    }
+
+    &.left {
+        text-align: left;
+    }
+}

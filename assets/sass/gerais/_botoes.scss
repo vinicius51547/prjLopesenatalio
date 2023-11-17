@@ -1,0 +1,96 @@
+.btn-content {
+    margin-top: 28px;
+}
+
+// Botão
+.btn {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+// .btn::before {
+//     content: "";
+//     position: absolute;
+//     left: 10px;
+//     top: 50%;
+//     width: 25px;
+//     height: 1px;
+//     background-color: $primary-color;
+//     transform: translateY(-50%);
+//     opacity: 0;
+//     transition: opacity 0.3s;
+// }
+
+// .btn:hover::before {
+//     opacity: 1;
+// }
+
+.btn:hover {
+    // padding-left: 40px;
+    background: #df0000;
+}
+
+@keyframes btn-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba($primary-color, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 15px rgba($primary-color, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba($primary-color, 0);
+    }
+}
+
+// Efeito constante
+.btn.pulse {
+    animation: btn-pulse 2s infinite;
+}
+
+// Botão segundario 
+.btn-2 {
+    cursor: pointer;
+    font-weight: 700;
+    transition: all .2s;
+    padding: 10px 0;
+    border-radius: 100px;
+    background: transparent;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #000;
+}
+
+
+.btn-2>i {
+    width: 34px;
+    height: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 25px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-2:hover i {
+    transform: translateX(5px);
+    color: $primary-color;
+    border-color: $primary-color;
+}
+
+.btn-2:active {
+    transform: scale(0.95);
+}
