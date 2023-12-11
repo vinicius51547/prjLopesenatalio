@@ -111,35 +111,30 @@ include('estrutura/head.php');
 
     <!-- Caracteristicas -->
     <div class="features secao">
-        <span class="image-overlay"></span> <!-- Película preta -->
-
         <div class="features-content">
             <div class="ft">
-                <i class="ri-calendar-line"></i>
-                <span>+20</span>
-                <span>Anos de experiência</span>
+                <i class="fas fa-truck"></i>
+                <span>Entrega no prazo estimado</span>
             </div>
 
             <div class="ft">
-                <i class="ri-calendar-line"></i>
-                <span>+20</span>
-                <span>Anos de experiência</span>
+                <i class="fas fa-wrench"></i>
+                <span>Técnicos altamente qualificados</span>
             </div>
 
             <div class="ft">
-                <i class="ri-calendar-line"></i>
-                <span>+20</span>
-                <span>Anos de experiência</span>
+                <i class="fas fa-hard-hat"></i>
+                <span>Trabalhamos com segurança</span>
             </div>
 
             <div class="ft">
-                <i class="ri-calendar-line"></i>
-                <span>+20</span>
+                <i class="fas fa-calendar-alt"></i>
                 <span>Anos de experiência</span>
             </div>
         </div>
     </div>
     <!-- /Caracteristicas -->
+
 
     <!-- Serviços -->
     <section class="servicos secao grey">
@@ -264,75 +259,75 @@ include('estrutura/head.php');
                 <h1 class="title btt center">Nossos Projetos Recentes</h1>
 
                 <!-- Galeria -->
-                <div class="gallery-container">
+                <div class="jobs-container">
                     <!-- Repetindo -->
-                    <div class="gallery">
+                    <div class="jobs">
                         <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
                             <figure>
                                 <img src="assets/img/image1.png" alt="Imagem 1">
                             </figure>
 
-                            <span class="overlay-gallery">
+                            <span class="overlay-jobs">
                                 <i class="ri-zoom-in-line"></i>
                             </span>
                         </a>
                     </div>
                     <!-- Repetindo -->
-                    <div class="gallery">
+                    <div class="jobs">
                         <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
                             <figure>
                                 <img src="assets/img/image1.png" alt="Imagem 1">
                             </figure>
 
-                            <span class="overlay-gallery">
+                            <span class="overlay-jobs">
                                 <i class="ri-zoom-in-line"></i>
                             </span>
                         </a>
                     </div>
                     <!-- Repetindo -->
-                    <div class="gallery">
+                    <div class="jobs">
                         <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
                             <figure>
                                 <img src="assets/img/image1.png" alt="Imagem 1">
                             </figure>
 
-                            <span class="overlay-gallery">
+                            <span class="overlay-jobs">
                                 <i class="ri-zoom-in-line"></i>
                             </span>
                         </a>
                     </div>
                     <!-- Repetindo -->
-                    <div class="gallery">
+                    <div class="jobs">
                         <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
                             <figure>
                                 <img src="assets/img/image1.png" alt="Imagem 1">
                             </figure>
 
-                            <span class="overlay-gallery">
+                            <span class="overlay-jobs">
                                 <i class="ri-zoom-in-line"></i>
                             </span>
                         </a>
                     </div>
                     <!-- Repetindo -->
-                    <div class="gallery">
+                    <div class="jobs">
                         <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
                             <figure>
                                 <img src="assets/img/image1.png" alt="Imagem 1">
                             </figure>
 
-                            <span class="overlay-gallery">
+                            <span class="overlay-jobs">
                                 <i class="ri-zoom-in-line"></i>
                             </span>
                         </a>
                     </div>
                     <!-- Repetindo -->
-                    <div class="gallery">
+                    <div class="jobs">
                         <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
                             <figure>
                                 <img src="assets/img/image1.png" alt="Imagem 1">
                             </figure>
 
-                            <span class="overlay-gallery">
+                            <span class="overlay-jobs">
                                 <i class="ri-zoom-in-line"></i>
                             </span>
                         </a>
@@ -345,22 +340,9 @@ include('estrutura/head.php');
     <!-- /Trabalhos -->
 
     <!-- Contato-seção -->
-
-    <section class="home-contact secao">
-        <span class="image-overlay"></span> <!-- Película preta -->
-
-        <div class="home-contact-container">
-            <div class="home-contact-info">
-                <h1 class="title bigger">Descubra como podemos atender às suas necessidades!</h1>
-                <p>Peça agora um orçamento sem compromisso clicando no botão.</p>
-            </div>
-
-            <div class="btn-home-contact">
-                <a href="" class="btn">SOLICITAR ORÇAMENTO</a>
-            </div>
-        </div>
-    </section>
-
+    <?php 
+    include('estrutura/contato-secao.php');
+    ?>
     <!-- /Contato-seção -->
 
     <!-- Footer -->

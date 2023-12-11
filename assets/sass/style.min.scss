@@ -10,11 +10,19 @@
 // Home
 @import "home/home";
 
+// Portfolio
+@import "portfolio/portfolio";
+
+// Contato
+@import "contato/contato";
+
 // Estrutura
 @import "estrutura/header";
 @import "estrutura/topbar";
 @import "estrutura/footer";
+@import "estrutura/contato-secao";
 
 // Lib
 @import "lib/swiper-bundle.min";
 @import "lib/lightbox";
+@import "lib/animate";

@@ -6,10 +6,24 @@
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
     transition: all 0.3 s ease;
+    -webkit-tap-highlight-color: transparent;
 }
+
+:focus {
+    outline: none !important;
+}
+
 
 b {
     font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 // Margin top
@@ -39,4 +53,15 @@ b {
     &.grey {
         background: $grey-color;
     }
+}
+
+//  Adicione uma película meio preta por cima das imagens 
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 55%);
+    // z-index: -1;
 }

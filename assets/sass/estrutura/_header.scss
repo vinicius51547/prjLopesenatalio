@@ -1,331 +1,390 @@
-/* Inicio Navbar*/
-
 .header {
-    background-color: #fff;
-    position: sticky;
-    width: 100%;
-    left: 0;
+    position: relative;
     top: 0;
-    z-index: 99;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    transition: top 0.3s ease;
+    // Adicionando uma transição suave para a propriedade top 
 }
 
-.container {
+.fixed-menu .nav {
+    position: fixed;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 0;
+    background: #ffffff;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    -ms-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -op-animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -ms-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
+    -op-animation-duration: 500ms;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+    -ms-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -op-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -ms-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -op-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+//=============== REUSABLE CSS CLASSES ===============
+.container-header {
     @include container;
 }
 
-.header-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 4px;
-}
-
-.header .logo a img {
+//=============== NAV ===============
+.logo img {
     max-width: 155px;
 }
 
-.nav-menu-img img {
-    max-width: 100px;
+.nav-logo,
+.nav-burger,
+.nav-close {
+    color: hsl(220, 24%, 12%);
 }
 
-// .menu {
-//     display: flex;
-//     align-items: center;
-//     gap: 30px;
-//     list-style: none;
-//     position: relative;
-// }
-
-.header .menu>.menu-item {
-    display: inline-block;
-    margin-left: 30px;
-    position: relative;
-    vertical-align: middle;
-}
-
-.header .menu>.menu-item>a {
-    text-decoration: none;
-    display: block;
-    padding: 12px 0;
-    font-size: 16px;
-    color: #161825;
-    text-transform: capitalize;
-    transition: all 0.3s ease;
-}
-
-.header .menu>.menu-item li a {
-    text-decoration: none;
-}
-
-.header .menu>.menu-item>a .plus {
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-    position: relative;
-    margin-left: 5px;
-    pointer-events: none;
-}
-
-.header .menu>.menu-item>a .plus:before,
-.header .menu>.menu-item>a .plus:after {
-    content: '';
-    position: absolute;
-    box-sizing: border-box;
-    left: 50%;
-    top: 50%;
-    background-color: #161825;
-    height: 2px;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease;
-}
-
-.header .menu>.menu-item:hover>a .plus:before,
-.header .menu>.menu-item:hover>a .plus:after {
-    background-color: $primary-color;
-}
-
-.header .menu>.menu-item>a .plus:after {
-    transform: translate(-50%, -50%) rotate(-90deg);
-}
-
-.header .menu>.menu-item>.sub-menu>.menu-item>a:hover,
-.header .menu>.menu-item:hover>a {
-    color: $primary-color;
-}
-
-.header .menu>.menu-item>.sub-menu {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 220px;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: #ffffff;
-    padding: 10px 0;
-    border-top: 3px solid $primary-color;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-@media(min-width: 992px) {
-    .menu {
-        display: flex;
-        align-items: center;
-    }
-
-    .header .menu>.menu-item-has-children:hover>.sub-menu {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .header .menu>.menu-item-has-children:hover>a .plus:after {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-}
-
-.header .menu>.menu-item>.sub-menu>.menu-item {
-    display: block;
-}
-
-.header .menu>.menu-item>.sub-menu>.menu-item>a {
-    display: block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #161825;
-    transition: all 0.3s ease;
-    text-transform: capitalize;
-}
-
-.header .open-nav-menu i {
-    // height: 50px;
-    // width: 40px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.header .open-nav-menu i {
-    // display: block;
-    // height: 3px;
-    // width: 24px;
-    // background-color: #161825;
-    position: relative;
-}
-
-// .header .open-nav-menu span:before,
-// .header .open-nav-menu span:after {
-//     content: '';
-//     position: absolute;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: #161825;
-//     box-sizing: border-box;
-// }
-
-// .header .open-nav-menu span:before {
-//     top: -7px;
-// }
-
-// .header .open-nav-menu span:after {
-//     top: 7px;
-// }
-
-.header .close-nav-menu {
-    color: #fff;
-    font-size: 30px;
-    margin: 15px 15px;
-    display: none;
-    align-items: center;
-    justify-content: end;
-}
-
-.header .close-nav-menu i:hover {
-    cursor: pointer;
-    color: $primary-color;
-}
-
-.header .menu-overlay {
-    position: fixed;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.5);
-    left: 0;
-    top: 0;
+.nav-data {
     height: 100%;
-    width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.nav-btns {
     display: flex;
-    justify-content: center;
-    margin: $margin-align-center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media only screen and (min-width: 920px) {
-    .nav-btns {
-        max-width: 170px;
-        margin: $margin-align-center;
-    }
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    font-weight: 600;
 }
 
-/* responsive */
+.nav-logo i {
+    font-weight: initial;
+    font-size: 1.25rem;
+}
 
-@media(max-width: 920px) {
-    .header .logo {
-        margin: $margin-align-center;
+.nav-toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.nav-burger,
+.nav-close {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+}
+
+.nav-close {
+    opacity: 0;
+}
+
+// Menu Mobile 
+@media screen and (max-width: 920px) {
+    .logo {
+        margin: 0 auto;
     }
 
-    .header .logo a img {
-        max-width: 130px;
+    .logo img {
+        max-width: 100px;
     }
 
-    .header .menu-overlay.active {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .menu {
-        gap: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header .nav-menu {
+    .nav-menu {
         position: fixed;
-        right: -280px;
-        visibility: hidden;
+        right: -100%;
+        // top: 3.5rem;
+        width: 280px;
+        height: 100vh;
+        overflow: auto;
+        pointer-events: none;
+        opacity: 0;
+        transition: right .4s, opacity .3s;
+    }
+
+    .nav-menu::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .nav-list {
+        background-color: #fff;
+        position: fixed;
         width: 280px;
         height: 100%;
-        top: 0;
-        overflow-y: auto;
-        background-image: linear-gradient(130deg,
-                hsl(0deg 93% 12%) 13%,
-                hsl(0deg 100% 11%) 43%,
-                hsl(0deg 100% 11%) 49%,
-                hsl(0deg 100% 10%) 50%,
-                hsl(0deg 100% 10%) 50%,
-                hsl(0deg 100% 10%) 50%,
-                hsl(0deg 100% 9%) 50%,
-                hsl(0deg 100% 9%) 51%,
-                hsl(0deg 100% 9%) 57%,
-                hsl(0deg 0% 0%) 87%);
-        z-index: 1000;
-        padding: 15px 0;
-        transition: all 0.5s ease;
+        padding-top: 15px;
     }
 
-    .header .nav-menu.open {
-        visibility: visible;
-        right: 0px;
-    }
-
-    .menu-item a {
-        text-decoration: none;
-    }
-
-    .header .menu>.menu-item {
-        display: block;
-        margin: 0;
-    }
-
-    .header .menu>.menu-item-has-children>a {
+    .btn-ocarmento {
+        margin-top: 15px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
+        padding: 0 1.5rem;
     }
 
-    .header .menu>.menu-item>a {
-        color: #ffffff;
-        padding: 12px 15px;
-        font-weight: bold;
-        // border-bottom: 1px solid #333333;
-    }
-
-    .header .menu>.menu-item>a .plus:before,
-    .header .menu>.menu-item>a .plus:after {
-        background-color: #ffffff;
-    }
-
-    .header .menu>.menu-item-has-children.active>a .plus:after {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-
-    .header .menu>.menu-item>.sub-menu {
+    .btn-ocarmento a {
         width: 100%;
-        position: relative;
-        opacity: 1;
-        visibility: visible;
-        border: none;
-        background-color: transparent;
-        box-shadow: none;
-        transform: translateY(0px);
-        padding: 0px;
-        left: auto;
-        top: auto;
-        max-height: 0;
-        overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
 
-    .header .menu>.menu-item>.sub-menu>.menu-item>a {
-        padding: 12px 45px;
-        color: #ffffff;
-        // border-bottom: 1px solid #333333;
+    // Overlay 
+    #overlay-menu {
+        position: fixed;
+        z-index: 15;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .nav-menu {
+        width: 100%;
     }
 
-    .header .close-nav-menu,
-    .header .open-nav-menu i {
+    .nav-list {
+        width: 100%;
+    }
+}
+
+.nav-link {
+    color: hsl(220, 24%, 12%);
+    font-weight: 600;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .3s;
+}
+
+// .nav-link:hover {
+//     background-color: hsl(220, 24%, 12%);
+// }
+
+// Abrir menu 
+.show-menu {
+    opacity: 1;
+    top: 85px;
+    right: 0;
+    pointer-events: initial;
+    overflow: hidden;
+}
+
+// Show icon 
+.show-icon .nav-burger {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+.show-icon .nav-close {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+//=============== DROPDOWN ===============
+.dropdown-item {
+    cursor: pointer;
+}
+
+// Desabilitando quando apertar no dropdown 
+.nav-link.disable,
+.btn.disable {
+    display: none;
+}
+
+
+.dropdown-arrow {
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform .4s;
+}
+
+.dropdown-link {
+    padding: 1.25rem;
+    color: hsl(220, 24%, 12%);
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: 600;
+    transition: background-color .3s;
+}
+
+.dropdown-link i {
+    font-size: 1.25rem;
+    font-weight: initial;
+}
+
+.services-link {
+    display: block;
+    padding: 1.25rem;
+    color: hsl(220, 24%, 12%);
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    // justify-content: space-between;
+    column-gap: .5rem;
+    font-weight: 600;
+    transition: background-color .3s;
+}
+
+// .services-link:hover,
+// .dropdown-link:hover {
+//     background-color: hsl(220, 24%, 12%);
+// }
+
+.dropdown-menu {
+    top: 0;
+    right: -280px;
+    position: absolute;
+    width: 280px;
+    overflow: hidden;
+    transition: right .4s, opacity .3s;
+}
+
+// Ativando quando apertar no dropdown 
+.dropdown-menu.active {
+    display: block;
+    width: 100%;
+    opacity: 1;
+    outline: none;
+    right: 0;
+    top: 0;
+    transition: right .4s, opacity .3s;
+}
+
+.back-button {
+    background: none;
+    color: hsl(220, 24%, 12%);
+    border: 0;
+    padding: 1.25rem;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #58585b;
+    cursor: pointer;
+}
+
+// .back-button:hover {
+//     background-color: hsl(220, 24%, 12%);
+// }
+
+// Show dropdown menu 
+@media (min-width: 920px) {
+    .dropdown-item:hover .dropdown-menu {
+        display: block;
+        transition: max-height .4s ease-in;
+    }
+
+    // Rotate dropdown icon 
+    .dropdown-item:hover .dropdown-arrow {
+        transform: rotate(90deg);
+    }
+
+    .back-button {
+        display: none;
+    }
+}
+
+//=============== BREAKPOINTS ===============
+// For small devices 
+@media screen and (max-width: 340px) {
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .nav-link {
+        padding-inline: 1rem;
+    }
+}
+
+// For large devices 
+@media screen and (min-width: 920px) {
+    .container {
+        margin-inline: auto;
+    }
+
+    .container-header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        // height: calc(3.5rem + 2rem);
     }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 3rem;
+    }
+
+    .nav-link {
+        height: 100%;
+        padding: 0;
+        justify-content: initial;
+        column-gap: .25rem;
+    }
+
+    .nav-link:hover {
+        background-color: transparent;
+    }
+
+    .dropdown-item {
+        position: relative;
+        height: 100%;
+    }
+
+    .dropdown-menu {
+        max-height: initial;
+        overflow: initial;
+        position: absolute;
+        width: 220px;
+        left: 0;
+        top: 6rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .3s, top .3s;
+    }
+
+    .dropdown-link {
+        padding-inline: 1rem 3.5rem;
+    }
+
+    .services-link {
+        display: none;
+    }
+
+    // Show dropdown menu 
+    .dropdown-item:hover .dropdown-menu {
+        opacity: 1;
+        top: 75px;
+        pointer-events: initial;
+        transition: top .3s;
+    }
+
 }

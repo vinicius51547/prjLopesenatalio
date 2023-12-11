@@ -1,5 +1,6 @@
 // /---- Slider ----\
 .swiper-container {
+    // margin-top: 114px;
     height: 75vh;
     width: 100%;
     position: relative;
@@ -13,21 +14,13 @@
 }
 
 .swiper-slide img {
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     margin: 0 auto;
-}
-
-//  Adicione uma película meio preta por cima das imagens 
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 75%);
+    z-index: -100;
 }
 
 .slide-text {
@@ -181,7 +174,7 @@
 
 .features {
     padding: 40px 0;
-    background-image: url(../img/vecteezy_black-and-white-background-gray-abstract-background-used_11574597.jpg);
+    background-image: url(../../assets/img/parallax_05.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -208,11 +201,12 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    max-width: 200px;
     /* Centraliza o texto dentro dos elementos .ft */
 }
 
 .ft i {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .ft strong {
@@ -222,6 +216,7 @@
 }
 
 .ft span {
+    padding-top: 10px;
     font-size: $font-size-small;
     color: $grey-color;
 }
@@ -320,7 +315,7 @@
 
 
 // Galeria
-.gallery-container {
+.jobs-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -329,11 +324,11 @@
     gap: 20px;
 }
 
-.gallery {
+.jobs {
     flex: 1 300px;
 }
 
-.gallery img {
+.jobs img {
     width: 100%;
 }
 
@@ -344,7 +339,7 @@
     display: inline-block;
 }
 
-.overlay-gallery {
+.overlay-jobs {
     position: absolute;
     top: 0;
     left: 0;
@@ -360,13 +355,13 @@
     transition: opacity 0.5s;
 }
 
-.overlay-gallery i {
+.overlay-jobs i {
     font-size: 3rem;
     color: white;
     /* Cor do ícone de lupa */
 }
 
-.lightbox-link:hover .overlay-gallery {
+.lightbox-link:hover .overlay-jobs {
     opacity: 1;
 }
 
@@ -374,59 +369,3 @@
 // /---- ./Trabalhos ----\
 
 
-// /---- Contato-seção ----\
-.home-contact {
-    background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-
-.home-contact-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    @include container;
-    gap: 20px;
-}
-
-@media (max-width: 700px) {
-    .home-contact-container {
-        justify-content: center;
-    }
-
-    .home-contact-info h1,
-    .home-contact-info p {
-        text-align: center !important;
-    }
-
-    .btn-home-contact {
-        margin-top: 5px;
-    }
-}
-
-.home-contact-container h1 {
-    color: #fff;
-}
-
-.home-contact-info {
-    z-index: 2;
-    flex: 1 400px;
-}
-
-.home-contact-info p {
-    font-size: 20px;
-}
-
-.home-contact-info h1,
-.home-contact-info p {
-    color: #fff;
-    text-align: left;
-}
-
-
-
-// /---- ./Contato-seção ----\
