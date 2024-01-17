@@ -43,7 +43,7 @@ include('estrutura/head.php');
                     acabamento a pisos de garagens, quadras poliesportivas, salas de cirurgia
                     e clínicas hospitalares.</p>
                 <div class="btn-content">
-                    <a href="portfolio" class="btn">Ver Mais</a>
+                    <a href="portfolio" class="btn">Ver Mais </a>
                 </div>
             </div>
         </div>

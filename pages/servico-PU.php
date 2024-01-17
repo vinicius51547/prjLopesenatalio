@@ -20,7 +20,7 @@ include('estrutura/head.php');
             <h2>Selante P.U</h2>
             <ul class="page-title-link-selante">
                 <li><a href="home">HOME</a></li>
-                <li><a href="#">Selante P.U</a></li>
+                <li><a href="#">Selante P.U</a> </li>
             </ul>
         </div>
     </div>
