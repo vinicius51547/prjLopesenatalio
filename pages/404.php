@@ -6,11 +6,7 @@
 $pageTitle = "Pagina não encontrada";
 include('estrutura/head.php');
 ?>
-<style>
-    h1 {
-        margin-top: 150px;
-    }
-</style>
+
 
 <body>
     <!-- Header -->
@@ -22,8 +18,8 @@ include('estrutura/head.php');
     <div class="error-page-banner">
         <div class="image-overlay"></div> <!-- Película preta -->
 
-        <div class="banner-container-error-page">
-            <h2>Pagina não encontrada</h2>
+        <div class="banner-container-error-page" data-aos="zoom-in" data-aos-duration="800">
+            <h2>Página não encontrada</h2>
             <ul class="page-title-link-error-page">
                 <a href="contato" class="btn pulse">HOME</a>
             </ul>
