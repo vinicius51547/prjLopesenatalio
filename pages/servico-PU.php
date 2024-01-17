@@ -40,7 +40,7 @@ include('estrutura/head.php');
                 <p class="text">
                     Para que serve um selante PU? Normalmente, os selantes são usados ​​para fechar aberturas entre superfícies, onde outros materiais como concreto e argamassa não podem ser usados.</p>
                 <div class="btn-content">
-                    <a href="" class="btn">Saiba Mais</a>
+                    <a href="portfolio" class="btn">Ver Mais</a>
                 </div>
             </div>
         </div>
