@@ -80,9 +80,6 @@
     font-size: 1.2rem;
     color: #fff;
 
-    // @include mobile-gf {
-    //     font-size: 1rem;
-    // }
 }
 
 
@@ -150,18 +147,6 @@
     }
 }
 
-// .sobre-img::after {
-//     content: "";
-//     position: absolute;
-//     bottom: -10px;
-//     left: -10px;
-//     border: 3px solid $primary-color;
-//     width: 50%;
-//     height: 50%;
-//     z-index: -1;
-//     border-radius: 1px;
-// }
-
 .sobre-img img {
     width: 100%;
     border-radius: 5px;
@@ -174,11 +159,10 @@
 
 .features {
     padding: 40px 0;
-    background-image: url(../../assets/img/parallax_05.png);
+    background-image: url(../../assets/img/parallax.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    // background-attachment: fixed;
 }
 
 .features-content {

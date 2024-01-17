@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
-    transition: all 0.3 s ease;
+    transition: all 0.3 ease;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -24,6 +24,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 // Margin top
@@ -65,3 +66,35 @@ a {
     background-color: rgba(0, 0, 0, 55%);
     // z-index: -1;
 }
+
+// Barra scroll
+
+/* Chrome, Safari e Opera */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #eee;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+  }
+  
+  /* Firefox */
+  ::-moz-scrollbar {
+    width: 10px;
+    background-color: #eee;
+  }
+  
+  ::-moz-scrollbar-thumb {
+    background-color: $primary-color;
+  }
+  
+  /* Edge e IE */
+  ::-ms-scrollbar {
+    width: 10px;
+    background-color: #eee;
+  }
+  
+  ::-ms-scrollbar-thumb {
+    background-color: $primary-color;
+  }

@@ -45,6 +45,10 @@ footer.top .links {
     color: #000;
 }
 
+.links-column a:hover {
+    cursor: pointer;
+}
+
 footer h2 {
     margin: 0 0 10px;
     font-size: 12px;
@@ -59,21 +63,11 @@ footer p {
     color: #000;
 }
 
-.legal>a {
-    margin: 0 0 0 4px;
-    color: #000;
+.copyright a:hover {
+    color: $primary-color;
 }
 
-.legal,
-.copyright {
-    font-size: 12px;
-}
-
-.legal>span {
-    margin-right: 10px;
-}
-
-
+// Resposive
 @media (width > 400px) {
     .links-column {
         text-align: left;
@@ -109,6 +103,7 @@ footer p {
 
 
     footer.bottom {
+        @include container;
         justify-content: flex-start;
     }
 }

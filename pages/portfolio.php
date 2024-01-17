@@ -7,10 +7,7 @@ include('estrutura/head.php');
 ?>
 
 <body>
-    <!-- TopBar -->
-    <?php
-    include('estrutura/topbar.php');
-    ?>
+
     <!-- Header -->
     <?php
     include('estrutura/header.php');
@@ -20,11 +17,11 @@ include('estrutura/head.php');
     <div class="portfolio-banner">
         <div class="image-overlay"></div> <!-- Película preta -->
 
-        <div class="portfolio-container">
+        <div class="portfolio-container" data-aos="zoom-in" data-aos-duration="800">
             <h2>Portfólio</h2>
             <ul class="page-title-link">
-                <li><a href="">HOME</a></li>
-                <li><a href="">PORTFÓLIO</a></li>
+                <li><a href="home">HOME</a></li>
+                <li><a href="#">PORTFÓLIO</a></li>
             </ul>
         </div>
     </div>
@@ -34,12 +31,12 @@ include('estrutura/head.php');
     <!-- Galeria -->
 
     <section class="secao">
-        <div class="gallery-container">
+        <div class="portfolio-content">
             <!-- Repetindo -->
-            <div class="gallery">
-                <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="800">
+                <a href="assets/img/servicos/pintura-epoxi3.jpg" data-lightbox="models" class="lightbox-link">
                     <figure>
-                        <img src="assets/img/image1.png" alt="Imagem 1">
+                        <img src="assets/img/servicos/pintura-epoxi3.jpg" alt="Imagem 1">
                     </figure>
 
                     <span class="overlay-gallery">
@@ -48,10 +45,10 @@ include('estrutura/head.php');
                 </a>
             </div>
             <!-- Repetindo -->
-            <div class="gallery">
-                <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="800">
+                <a href="assets/img/servicos/pintura-epoxi4.jpg" data-lightbox="models" class="lightbox-link">
                     <figure>
-                        <img src="assets/img/image1.png" alt="Imagem 1">
+                        <img src="assets/img/servicos/pintura-epoxi4.jpg" alt="Imagem 2">
                     </figure>
 
                     <span class="overlay-gallery">
@@ -60,10 +57,23 @@ include('estrutura/head.php');
                 </a>
             </div>
             <!-- Repetindo -->
-            <div class="gallery">
-                <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="800">
+                <a href="assets/img/servicos/pintura-epoxi3.jpg" data-lightbox="models" class="lightbox-link">
                     <figure>
-                        <img src="assets/img/image1.png" alt="Imagem 1">
+                        <img src="assets/img/servicos/pintura-epoxi3.jpg" alt="Imagem 3">
+                    </figure>
+
+                    <span class="overlay-gallery">
+                        <i class="ri-zoom-in-line"></i>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Repetindo -->
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="800">
+                <a href="assets/img/servicos/p.u-1.jpg" data-lightbox="models" class="lightbox-link">
+                    <figure>
+                        <img src="assets/img/servicos/p.u-1.jpg" alt="Imagem 4">
                     </figure>
 
                     <span class="overlay-gallery">
@@ -72,10 +82,10 @@ include('estrutura/head.php');
                 </a>
             </div>
             <!-- Repetindo -->
-            <div class="gallery">
-                <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="800">
+                <a href="assets/img/servicos/pintura-epoxi2.jpg" data-lightbox="models" class="lightbox-link">
                     <figure>
-                        <img src="assets/img/image1.png" alt="Imagem 1">
+                        <img src="assets/img/servicos/pintura-epoxi2.jpg" alt="Imagem 5">
                     </figure>
 
                     <span class="overlay-gallery">
@@ -84,10 +94,10 @@ include('estrutura/head.php');
                 </a>
             </div>
             <!-- Repetindo -->
-            <div class="gallery">
-                <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="800">
+                <a href="assets/img/servicos/pintura-epoxi1.jpg" data-lightbox="models" class="lightbox-link">
                     <figure>
-                        <img src="assets/img/image1.png" alt="Imagem 1">
+                        <img src="assets/img/servicos/pintura-epoxi1.jpg" alt="Imagem 6">
                     </figure>
 
                     <span class="overlay-gallery">
@@ -96,10 +106,36 @@ include('estrutura/head.php');
                 </a>
             </div>
             <!-- Repetindo -->
-            <div class="gallery">
-                <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="800">
+                <a href="assets/img/servicos/epoxi1.jpg" data-lightbox="models" class="lightbox-link">
                     <figure>
-                        <img src="assets/img/image1.png" alt="Imagem 1">
+                        <img src="assets/img/servicos/epoxi1.jpg" alt="Imagem 7">
+                    </figure>
+
+                    <span class="overlay-gallery">
+                        <i class="ri-zoom-in-line"></i>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Repetindo -->
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="800">
+                <a href="assets/img/servicos/polimento-2.jpg" data-lightbox="models" class="lightbox-link">
+                    <figure>
+                        <img src="assets/img/servicos/polimento-2.jpg" alt="Imagem 8">
+                    </figure>
+
+                    <span class="overlay-gallery">
+                        <i class="ri-zoom-in-line"></i>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Repetindo -->
+            <div class="portfolio" data-aos="fade-up" data-aos-duration="800">
+                <a href="assets/img/servicos/p.u-3.jpg" data-lightbox="models" class="lightbox-link">
+                    <figure>
+                        <img src="assets/img/servicos/p.u-3.jpg" alt="Imagem 9">
                     </figure>
 
                     <span class="overlay-gallery">
@@ -114,18 +150,15 @@ include('estrutura/head.php');
 
 
     <!-- Contato-seção -->
-    <?php 
+    <?php
     include('estrutura/contato-secao.php');
     ?>
     <!-- /Contato-seção -->
-    
+
     <!-- Footer -->
     <?php
     include('estrutura/footer.php');
     ?>
-
-    <!-- JS -->
-    <script src="assets/js/lib/lightbox-plus-jquery.js"></script>
 
 </body>
 

@@ -1,0 +1,55 @@
+// /---- Contato-seção ----\
+.secao-contact {
+    position: relative;
+    background-image: url(../img/close-da-mao-escrevendo-nota-ao-telefone.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.secao-contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @include container;
+    gap: 20px;
+}
+
+@media (max-width: 700px) {
+    .secao-contact-container {
+        justify-content: center;
+    }
+
+    .secao-contact-info h1,
+    .secao-contact-info p {
+        text-align: center !important;
+    }
+
+    .btn-secao-contact {
+        margin-top: 5px;
+    }
+}
+
+.secao-contact-container h1 {
+    color: #fff;
+}
+
+.secao-contact-info {
+    z-index: 2;
+    flex: 1 400px;
+}
+
+.secao-contact-info p {
+    font-size: 20px;
+}
+
+.secao-contact-info h1,
+.secao-contact-info p {
+    color: #fff;
+    text-align: left;
+}
+
+// /---- ./Contato-seção ----\

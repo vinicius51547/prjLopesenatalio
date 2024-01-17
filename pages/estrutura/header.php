@@ -1,85 +1,68 @@
 <body>
-   <header class="header">
-      <nav class="nav">
-         <div class="container-header">
-            <div class="nav-data">
-               <div class="logo">
-                  <a href="home.php">
-                     <img src="assets/img/logo2.png" alt="logo" title="Lopesenatalio">
-                  </a>
-               </div>
-
-               <div class="nav-toggle" id="nav-toggle">
-                  <i class="ri-menu-line nav-burger"></i>
-                  <i class="ri-close-line nav-close"></i>
-               </div>
+    <!-- TopBar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-content">
+                <a href="contato"><i class="ri-mail-line"></i> email@gmail.com</a>
+                <a href="contato"><i class="ri-whatsapp-line"></i> (11) 999999999</a>
             </div>
+        </div>
+    </div>
 
-            <!--=============== NAV MENU ===============-->
-            <div class="nav-menu" id="nav-menu">
-               <ul class="nav-list">
-                  <li><a href="home" class="nav-link link_disable">Home</a></li>
-
-                  <li><a href="portfolio" class="nav-link link_disable">Portfólio</a></li>
-
-                  <!--=============== DROPDOWN 1 ===============-->
-                  <li class="dropdown-item">
-                     <div class="nav-link link_disable" id="dropdown-menu">
-                        Serviços <i class="ri-arrow-right-s-line dropdown-arrow"></i>
-                     </div>
-
-                     <!-- Dropdown -->
-                     <ul class="dropdown-menu">
-
-                        <li>
-                           <button href="#" class="back-button" id="closeDropdownButton">
-                           <i class="fa-solid fa-arrow-left"></i> Voltar
-                           </button>
+    
+    <!-- Inicio header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <a href="home">
+                        <img src="assets/img/logo2.png" alt="logo" title="Lopesenatalio">
+                    </a>
+                </div>
+                <div class="open-nav-menu">
+                    <span></span>
+                </div>
+                <div class="menu-overlay">
+                </div>
+                <!-- navigation menu start -->
+                <nav class="nav-menu">
+                    <div class="close-nav-menu">
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="home">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="portfolio">Portfólio</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Serviços <i class="plus"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="servico-Epoxi">Pintura em Epóxi</a></li>
+                                <li class="menu-item"><a href="servico-PU">Selante P.U</a></li>
+                                <li class="menu-item"><a href="servico-Polimento">Polimento de Piso</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="sobre">Sobre</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contato">Contato</a>
                         </li>
 
-                        <li>
-                           <a href="#" class="services-link">
-                              Serviços <i class="ri-arrow-right-s-line"></i>
-                           </a>
+                        <li class="btn-ocarmento">
+                            <a href="contato" class="link_disable btn btn-header pulse">ORÇAMENTO</a>
                         </li>
-
-                        <li>
-                           <a href="#" class="dropdown-link">
-                              Exemplo 1
-                           </a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="dropdown-link">
-                              Exemplo 2
-                           </a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="dropdown-link">
-                              Exemplo 3
-                           </a>
-                        </li>
-                     </ul>
-                  </li>
-
-                  <li><a href="#" class="nav-link link_disable">Sobre</a></li>
-
-
-                  <li><a href="contato" class="nav-link link_disable">Contato</a></li>
-
-                  <li class="btn-ocarmento">
-                     <a href="#" class="link_disable btn btn-header pulse">ORÇAMENTO</a>
-                  </li>
-               </ul>
+                    </ul>
+                </nav>
+                <!-- navigation menu end -->
             </div>
-         </div>
-      </nav>
-   </header>
+        </div>
+    </header>
 
-   <div id="overlay-menu"></div> <!-- Película preta -->
+    <!-- Fim header -->
 
 
-   <!-- JS -->
-   <script src="assets/js/estrutura/header.js"></script>
+    <!-- JS -->
+    <script src="assets/js/estrutura/header.js"></script>
 </body>

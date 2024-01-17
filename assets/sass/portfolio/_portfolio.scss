@@ -26,19 +26,8 @@
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 1px;
-    // margin-left: 20px;
     position: relative;
 }
-
-// .portfolio-container h2::after {
-//     background: $primary-color;
-//     content: "";
-//     height: 35px;
-//     left: -15px;
-//     position: absolute;
-//     top: 11px;
-//     width: 4px;
-// }
 
 .page-title-link {
     display: flex;
@@ -82,24 +71,22 @@
 
 
 // /---- Galeria ----\
-.gallery-container {
-    @include container;
-}
 
-.gallery-container {
+.portfolio-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     gap: 20px;
+    @include container;
 }
 
-.gallery {
+.portfolio {
     flex: 1 300px;
 }
 
-.gallery img {
+.portfolio img {
     width: 100%;
 }
 

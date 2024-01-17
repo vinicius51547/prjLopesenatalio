@@ -8,10 +8,6 @@ include('estrutura/head.php');
 
 <body>
 
-    <!-- TopBar -->
-    <?php
-    include('estrutura/topbar.php');
-    ?>
     <!-- Header -->
     <?php
     include('estrutura/header.php');
@@ -24,13 +20,13 @@ include('estrutura/head.php');
                 <img src="assets/img/slider/slider1.jpg" alt="Imagem 1">
                 <span class="image-overlay"></span> <!-- Película preta -->
                 <div class="slide-text">
-                    <div class="slider-text-content">
+                    <div class="slider-text-content" data-aos="zoom-in" data-aos-duration="800">
                         <h1 class="titulo-slide left">TRATAMENTO DE PISO INDUSTRIAL <b>&</b> PINTURA</h1>
                         <p>Serviços especializados em tratamento de piso industrial e pintura para transformar seu ambiente
                             industrial.
                         </p>
                         <div class="btn-content">
-                            <a href="" class="btn">Saiba Mais</a>
+                            <a href="sobre" class="btn">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
@@ -39,13 +35,13 @@ include('estrutura/head.php');
                 <img src="assets/img/slider/slider2.jpg" alt="Imagem 2">
                 <div class="image-overlay"></div> <!-- Película preta -->
                 <div class="slide-text">
-                    <div class="slider-text-content">
+                    <div class="slider-text-content" data-aos="zoom-in" data-aos-duration="800">
                         <h1 class="titulo-slide left">TRATAMENTO DE PISO INDUSTRIAL <b>&</b> PINTURA</h1>
                         <p>Serviços especializados em tratamento de piso industrial e pintura para transformar seu ambiente
                             industrial.
                         </p>
                         <div class="btn-content">
-                            <a href="" class="btn">Saiba Mais</a>
+                            <a href="sobre" class="btn">Saiba Mais</a>
                         </div>
                     </div>
 
@@ -55,13 +51,13 @@ include('estrutura/head.php');
                 <img src="assets/img/slider/slider1.jpg" alt="Imagem 3">
                 <div class="image-overlay"></div> <!-- Película preta -->
                 <div class="slide-text">
-                    <div class="slider-text-content">
+                    <div class="slider-text-content" data-aos="zoom-in" data-aos-duration="800">
                         <h1 class="titulo-slide left">TRATAMENTO DE PISO INDUSTRIAL <b>&</b> PINTURA</h1>
                         <p>Serviços especializados em tratamento de piso industrial e pintura para transformar seu ambiente
                             industrial.
                         </p>
                         <div class="btn-content">
-                            <a href="" class="btn">Saiba Mais</a>
+                            <a href="sobre" class="btn">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
@@ -90,11 +86,11 @@ include('estrutura/head.php');
     <!-- Sobre -->
     <section class="sobre secao">
         <div class="sobre-container">
-            <div class="sobre-img">
+            <div class="sobre-img" data-aos="fade-right" data-aos-duration="800">
                 <img src="assets/img/sobre/img-1.jpg" alt="">
             </div>
 
-            <div class="sobre-info">
+            <div class="sobre-info" data-aos="fade-left" data-aos-duration="800">
                 <h2 class="sub-title">SOBRE NÓS</h2>
                 <h1 class="title btt">Bem-vindo a Lopesenatalio</h1>
                 <p class="text">
@@ -102,7 +98,7 @@ include('estrutura/head.php');
                     área da contruçao civil,inovando na área de tratamento de piso com os melhores produtos de recuperação do mercado, fundada no ano de 2015 localizada na região de guaianases cidade de são paulo.
                 </p>
                 <div class="btn-content">
-                    <a href="" class="btn">Saiba Mais</a>
+                    <a href="sobre" class="btn">Saiba Mais</a>
                 </div>
             </div>
         </div>
@@ -111,7 +107,7 @@ include('estrutura/head.php');
 
     <!-- Caracteristicas -->
     <div class="features secao">
-        <div class="features-content">
+        <div class="features-content" data-aos="fade-up" data-aos-duration="800">
             <div class="ft">
                 <i class="fas fa-truck"></i>
                 <span>Entrega no prazo estimado</span>
@@ -139,21 +135,21 @@ include('estrutura/head.php');
     <!-- Serviços -->
     <section class="servicos secao grey">
         <div class="servicos-container">
-            <h2 class="sub-title">OFERECEMOS SERVIÇOS</h2>
-            <h1 class="title btt">Nossos serviços</h1>
+            <h2 class="sub-title" data-aos="fade-up" data-aos-duration="800">OFERECEMOS SERVIÇOS</h2>
+            <h1 class="title btt" data-aos="fade-up" data-aos-duration="800">Nossos serviços</h1>
 
             <!-- Cards -->
-            <div class="card-servico">
+            <div class="card-servico" data-aos="fade-up" data-aos-duration="800">
 
                 <!-- Repete -->
-                <a href="" class="card-link">
+                <a href="servico-Polimento" class="card-link">
                     <div class="card-container">
                         <div class="card-content">
                             <figure class="card-img">
-                                <img class="img-fluid" src="assets/img/servicos/service-1.jpg" alt="">
+                                <img class="img-fluid" src="assets/img/servicos/pintura-epoxi-sobre.jpg" alt="">
                             </figure>
-                            <h4 class="mb-1">Air Freight</h4>
-                            <p class="text mb-1">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <h4 class="mb-1">Polimento em piso</h4>
+                            <p class="text mb-1">O polimento de piso é um procedimento que ajuda a renovar o chão de um ambiente.</p>
                             <a class="btn-2">
                                 <span>Saiba mais</span>
                                 <i class="ri-arrow-right-line"></i>
@@ -163,14 +159,14 @@ include('estrutura/head.php');
                 </a>
 
                 <!-- Repete -->
-                <a href="" class="card-link">
+                <a href="servico-PU" class="card-link">
                     <div class="card-container">
                         <div class="card-content">
                             <figure class="card-img">
-                                <img class="img-fluid" src="assets/img/servicos/service-1.jpg" alt="">
+                                <img class="img-fluid" src="assets/img/servicos/p.u-sobre.jpg" alt="">
                             </figure>
-                            <h4 class="mb-1">Air Freight</h4>
-                            <p class="text mb-1">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <h4 class="mb-1">Selante P.U</h4>
+                            <p class="text mb-1">O selante de poliuretano (PU) é versátil, oferecendo aderência forte e durabilidade em fixação, colagem e vedação.</p>
                             <a class="btn-2">
                                 <span>Saiba mais</span>
                                 <i class="ri-arrow-right-line"></i>
@@ -180,14 +176,15 @@ include('estrutura/head.php');
                 </a>
 
                 <!-- Repete -->
-                <a href="" class="card-link">
+                <a href="servico-Epoxi" class="card-link">
                     <div class="card-container">
                         <div class="card-content">
                             <figure class="card-img">
-                                <img class="img-fluid" src="assets/img/servicos/service-1.jpg" alt="">
+                                <img class="img-fluid" src="assets/img/servicos/pintura-sobre.jpg" alt="">
                             </figure>
-                            <h4 class="mb-1">Air Freight</h4>
-                            <p class="text mb-1">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <h4 class="mb-1">Pintura Epóxi</h4>
+                            <p class="text mb-1">Com as tintas epóxis é possível dar cor e renovar o seu ambiente com um toque simples e
+                                diferencial.</p>
                             <a class="btn-2">
                                 <span>Saiba mais</span>
                                 <i class="ri-arrow-right-line"></i>
@@ -195,58 +192,6 @@ include('estrutura/head.php');
                         </div>
                     </div>
                 </a>
-
-                <!-- Repete -->
-                <a href="" class="card-link">
-                    <div class="card-container">
-                        <div class="card-content">
-                            <figure class="card-img">
-                                <img class="img-fluid" src="assets/img/servicos/service-1.jpg" alt="">
-                            </figure>
-                            <h4 class="mb-1">Air Freight</h4>
-                            <p class="text mb-1">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="btn-2">
-                                <span>Saiba mais</span>
-                                <i class="ri-arrow-right-line"></i>
-                            </a>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Repete -->
-                <a href="" class="card-link">
-                    <div class="card-container">
-                        <div class="card-content">
-                            <figure class="card-img">
-                                <img class="img-fluid" src="assets/img/servicos/service-1.jpg" alt="">
-                            </figure>
-                            <h4 class="mb-1">Air Freight</h4>
-                            <p class="text mb-1">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="btn-2">
-                                <span>Saiba mais</span>
-                                <i class="ri-arrow-right-line"></i>
-                            </a>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Repete -->
-                <a href="" class="card-link">
-                    <div class="card-container">
-                        <div class="card-content">
-                            <figure class="card-img">
-                                <img class="img-fluid" src="assets/img/servicos/service-1.jpg" alt="">
-                            </figure>
-                            <h4 class="mb-1">Air Freight</h4>
-                            <p class="text mb-1">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="btn-2">
-                                <span>Saiba mais</span>
-                                <i class="ri-arrow-right-line"></i>
-                            </a>
-                        </div>
-                    </div>
-                </a>
-
             </div>
         </div>
     </section>
@@ -255,16 +200,16 @@ include('estrutura/head.php');
     <section class="secao">
         <div class="work-conatiner">
             <div class="work-info">
-                <h2 class="sub-title">NOSSOS TRABALHOS</h2>
-                <h1 class="title btt center">Nossos Projetos Recentes</h1>
+                <h2 class="sub-title" data-aos="fade-up" data-aos-duration="800">NOSSOS TRABALHOS</h2>
+                <h1 class="title btt center" data-aos="fade-up" data-aos-duration="800">Nossos Projetos Recentes</h1>
 
                 <!-- Galeria -->
                 <div class="jobs-container">
                     <!-- Repetindo -->
-                    <div class="jobs">
-                        <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+                    <div class="jobs" data-aos="fade-up" data-aos-duration="800">
+                        <a href="assets/img/servicos/epoxi1.jpg" data-lightbox="models" class="lightbox-link">
                             <figure>
-                                <img src="assets/img/image1.png" alt="Imagem 1">
+                                <img src="assets/img/servicos/epoxi1.jpg" alt="Imagem 1">
                             </figure>
 
                             <span class="overlay-jobs">
@@ -273,10 +218,10 @@ include('estrutura/head.php');
                         </a>
                     </div>
                     <!-- Repetindo -->
-                    <div class="jobs">
-                        <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+                    <div class="jobs" data-aos="fade-up" data-aos-duration="800">
+                        <a href="assets/img/servicos/pintura-epoxi1.jpg" data-lightbox="models" class="lightbox-link">
                             <figure>
-                                <img src="assets/img/image1.png" alt="Imagem 1">
+                                <img src="assets/img/servicos/pintura-epoxi1.jpg" alt="Imagem 2">
                             </figure>
 
                             <span class="overlay-jobs">
@@ -285,10 +230,10 @@ include('estrutura/head.php');
                         </a>
                     </div>
                     <!-- Repetindo -->
-                    <div class="jobs">
-                        <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+                    <div class="jobs" data-aos="fade-up" data-aos-duration="800">
+                        <a href="assets/img/servicos/pintura-epoxi2.jpg" data-lightbox="models" class="lightbox-link">
                             <figure>
-                                <img src="assets/img/image1.png" alt="Imagem 1">
+                                <img src="assets/img/servicos/pintura-epoxi2.jpg" alt="Imagem 3">
                             </figure>
 
                             <span class="overlay-jobs">
@@ -297,10 +242,10 @@ include('estrutura/head.php');
                         </a>
                     </div>
                     <!-- Repetindo -->
-                    <div class="jobs">
-                        <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+                    <div class="jobs" data-aos="fade-up" data-aos-duration="800">
+                        <a href="assets/img/servicos/pintura-epoxi3.jpg" data-lightbox="models" class="lightbox-link">
                             <figure>
-                                <img src="assets/img/image1.png" alt="Imagem 1">
+                                <img src="assets/img/servicos/pintura-epoxi3.jpg" alt="Imagem 4">
                             </figure>
 
                             <span class="overlay-jobs">
@@ -309,10 +254,10 @@ include('estrutura/head.php');
                         </a>
                     </div>
                     <!-- Repetindo -->
-                    <div class="jobs">
-                        <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+                    <div class="jobs" data-aos="fade-up" data-aos-duration="800">
+                        <a href="assets/img/servicos/pintura-epoxi4.jpg" data-lightbox="models" class="lightbox-link">
                             <figure>
-                                <img src="assets/img/image1.png" alt="Imagem 1">
+                                <img src="assets/img/servicos/pintura-epoxi4.jpg" alt="Imagem 5">
                             </figure>
 
                             <span class="overlay-jobs">
@@ -321,10 +266,10 @@ include('estrutura/head.php');
                         </a>
                     </div>
                     <!-- Repetindo -->
-                    <div class="jobs">
-                        <a href="assets/img/image1.png" data-lightbox="models" class="lightbox-link">
+                    <div class="jobs" data-aos="fade-up" data-aos-duration="800">
+                        <a href="assets/img/servicos/p.u-2.jpg" data-lightbox="models" class="lightbox-link">
                             <figure>
-                                <img src="assets/img/image1.png" alt="Imagem 1">
+                                <img src="assets/img/servicos/p.u-2.jpg" alt="Imagem 6">
                             </figure>
 
                             <span class="overlay-jobs">
@@ -340,7 +285,7 @@ include('estrutura/head.php');
     <!-- /Trabalhos -->
 
     <!-- Contato-seção -->
-    <?php 
+    <?php
     include('estrutura/contato-secao.php');
     ?>
     <!-- /Contato-seção -->
@@ -349,11 +294,6 @@ include('estrutura/head.php');
     <?php
     include('estrutura/footer.php');
     ?>
-
-    <!-- JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/slide.js"></script>
-    <script src="assets/js/lib/lightbox-plus-jquery.js"></script>
 
 </body>
 

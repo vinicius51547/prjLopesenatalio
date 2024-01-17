@@ -1,0 +1,185 @@
+// /---- Banner ----\
+.epoxi-banner {
+    background: url(../img/portfolio/banner.jpeg);
+    padding: 80px 0;
+    background-clip: initial;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.banner-container-polimento {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-container-polimento h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.page-title-link-polimento {
+    display: flex;
+}
+
+.page-title-link-polimento li {
+    display: inline-block;
+    position: relative;
+}
+
+.page-title-link-polimento li::after {
+    background: $primary-color;
+    bottom: 8px;
+    content: "";
+    height: 2px;
+    margin-left: -4px;
+    position: absolute;
+    width: 10px;
+}
+
+.page-title-link-polimento li:last-child::after {
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.page-title-link-polimento li a {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.page-title-link-polimento li a:hover {
+    color: $primary-color;
+    transition: all .3s ease-in-out;
+}
+
+// /---- /Banner ----\
+
+// /---- Sobre Pintura epóxi ----\
+
+
+.sobre-container-polimento {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    @include container;
+
+    @include tablet-screen {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+}
+
+.sobre-info-polimento {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1 283px;
+    background-color: #fff;
+    padding: 45px 25px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .05);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .05);
+    position: relative;
+    margin-left: -45px;
+    border-radius: 5px;
+
+    @include tablet-screen {
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        padding: 0 0 45px 0;
+        box-shadow: none;
+    }
+}
+
+.sobre-img-polimento {
+    max-width: 550px;
+    position: relative;
+    // padding-top: 40px;
+
+
+    @include tablet-screen {
+        max-width: 100%;
+    }
+}
+
+.sobre-img-polimento img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+// /---- ./Sobre Pintura epóxi ----\
+
+// /---- Galeria ----\
+
+.gallery-content-polimento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.gallery-container-polimento {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.gallery-polimento {
+    flex: 1 300px;
+}
+
+.gallery-polimento img {
+    width: 100%;
+}
+
+.lightbox-link-polimento {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-gallery-polimento {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 99%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.overlay-gallery-polimento i {
+    font-size: 3rem;
+    color: white;
+}
+
+.lightbox-link-polimento:hover .overlay-gallery-polimento {
+    opacity: 1;
+}
+
+// /---- /Galeria ----\

@@ -95,7 +95,7 @@
     justify-content: space-between;
 }
 
-.container-form .content .left-side {
+.container-form .content .right-side {
     width: 25%;
     height: 100%;
     display: flex;
@@ -106,7 +106,7 @@
     position: relative;
 }
 
-.content .left-side::before {
+.content .right-side::before {
     content: '';
     position: absolute;
     height: 70%;
@@ -117,48 +117,48 @@
     background: #afafb6;
 }
 
-.content .left-side .details {
+.content .right-side .details {
     margin: 14px;
     text-align: center;
 }
 
-.content .left-side .details i {
+.content .right-side .details i {
     font-size: 30px;
     color: #ff0101;
     margin-bottom: 10px;
 }
 
-.content .left-side .details .topic {
+.content .right-side .details .topic {
     font-size: 18px;
     font-weight: 500;
 }
 
-.content .left-side .details .text-one,
-.content .left-side .details .text-two {
+.content .right-side .details .text-one,
+.content .right-side .details .text-two {
     font-size: 14px;
     color: #afafb6;
 }
 
 
-.container-form .content .right-side {
+.container-form .content .left-side {
     width: 75%;
     margin-left: 75px;
 }
 
-.content .right-side .topic-text {
+.content .left-side .topic-text {
     font-size: 23px;
     font-weight: 600;
     color: #ff0101;
 }
 
-.right-side .input-box {
+.left-side .input-box {
     height: 50px;
     width: 100%;
     margin: 12px 0;
 }
 
-.right-side .input-box input,
-.right-side .input-box textarea {
+.left-side .input-box input,
+.left-side .input-box textarea {
     height: 100%;
     width: 100%;
     border: none;
@@ -170,11 +170,11 @@
     resize: none;
 }
 
-.right-side .message-box {
+.left-side .message-box {
     min-height: 110px;
 }
 
-.right-side .input-box textarea {
+.left-side .input-box textarea {
     padding-top: 6px;
 }
 
@@ -183,7 +183,7 @@
         padding: 30px 40px 40px 35px;
     }
 
-    .container-form .content .right-side {
+    .container-form .content .left-side {
         width: 75%;
         margin-left: 55px;
     }
@@ -199,7 +199,7 @@
         flex-direction: column-reverse;
     }
 
-    .container-form .content .left-side {
+    .container-form .content .right-side {
         width: 100%;
         flex-direction: row;
         margin-top: 40px;
@@ -207,11 +207,11 @@
         flex-wrap: wrap;
     }
 
-    .container-form .content .left-side::before {
+    .container-form .content .right-side::before {
         display: none;
     }
 
-    .container-form .content .right-side {
+    .container-form .content .left-side {
         width: 100%;
         margin-left: 0;
     }
