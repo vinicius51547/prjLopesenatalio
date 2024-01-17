@@ -6,7 +6,7 @@
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 // Defina uma lista de páginas válidas
-$valid_pages = ['home', 'sobre', 'contato', 'portfolio', 'servico/epoxi', 'servico/polimento', 'servico/selante_Pu'];
+$valid_pages = ['home', 'sobre', 'contato', 'portfolio', 'servico-Epoxi', 'servico-Polimento', 'servico-PU'];
 
 // Verifique se a página solicitada está na lista de páginas válidas
 if (in_array($page, $valid_pages)) {
