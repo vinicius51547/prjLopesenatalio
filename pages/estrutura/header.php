@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- HEAD -->
+<?php
+include('estrutura/head.php');
+?>
+
 <body>
     <!-- TopBar -->
     <div class="top-bar">
