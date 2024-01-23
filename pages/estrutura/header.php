@@ -9,56 +9,68 @@
         </div>
     </div>
 
-    
+
     <!-- Inicio header -->
+    <!--=============== HEADER ===============-->
     <header class="header">
-        <div class="container">
-            <div class="header-main">
+        <nav class="nav">
+            <div class="nav-data">
                 <div class="logo">
                     <a href="home">
                         <img src="assets/img/logo2.png" alt="logo" title="Lopesenatalio">
                     </a>
                 </div>
-                <div class="open-nav-menu">
-                    <span></span>
-                </div>
-                <div class="menu-overlay">
-                </div>
-                <!-- navigation menu start -->
-                <nav class="nav-menu">
-                    <div class="close-nav-menu">
-                    </div>
-                    <ul class="menu">
-                        <li class="menu-item">
-                            <a href="home">Home</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="portfolio">Portfólio</a>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#" data-toggle="sub-menu">Serviços <i class="plus"></i></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="servico-Epoxi">Pintura em Epóxi</a></li>
-                                <li class="menu-item"><a href="servico-PU">Selante P.U</a></li>
-                                <li class="menu-item"><a href="servico-Polimento">Polimento de Piso</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="sobre">Sobre</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="contato">Contato</a>
-                        </li>
 
-                        <li class="btn-ocarmento">
-                            <a href="contato" class="link_disable btn btn-header pulse">ORÇAMENTO</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- navigation menu end -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav-burger"></i>
+                    <i class="ri-close-line nav-close"></i>
+                </div>
             </div>
-        </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="home" class="nav-link">Home</a></li>
+
+                    <li><a href="portfolio" class="nav-link">Portfólio</a></li>
+
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown-item">
+                        <div class="nav-link">
+                            Serviços <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </div>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="servico-Epoxi" class="dropdown-link">
+                                    Pintura em epóxi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="servico-PU" class="dropdown-link">
+                                    Selante P.U
+                                </a>
+                            </li>
+                            <li>
+                                <a href="servico-Polimento" class="dropdown-link">
+                                    Polimento de piso
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sobre" class="nav-link">Sobre</a></li>
+
+                    <li><a href="contato" class="nav-link">Contato</a></li>
+
+                    <li class="btn-ocarmento">
+                        <a href="contato" class="link_disable btn btn-header pulse">ORÇAMENTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
 
     <!-- Fim header -->
 

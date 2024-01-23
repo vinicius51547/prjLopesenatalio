@@ -6,7 +6,11 @@
 $pageTitle = "Pagina não encontrada";
 include('estrutura/head.php');
 ?>
-
+<style>
+    h1 {
+        margin-top: 150px;
+    }
+</style>
 
 <body>
     <!-- Header -->

@@ -20,7 +20,7 @@ include('estrutura/head.php');
             <h2>Selante P.U</h2>
             <ul class="page-title-link-selante">
                 <li><a href="home">HOME</a></li>
-                <li><a href="#">Selante P.U</a> </li>
+                <li><a href="#">Selante P.U</a></li>
             </ul>
         </div>
     </div>
@@ -34,7 +34,7 @@ include('estrutura/head.php');
                 <img src="assets/img/servicos/p.u-sobre.jpg" alt="">
             </div>
 
-            <div class="sobre-info-selante" data-aos="fade-left" data-aos-duration="800">
+            <div class="sobre-info-selante" data-aos="zoom-in" data-aos-duration="800">
                 <h2 class="sub-title">SOBRE</h2>
                 <h1 class="title btt">Selante P.U</h1>
                 <p class="text">

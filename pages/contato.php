@@ -19,8 +19,8 @@ include('estrutura/head.php');
         <div class="contact-container" data-aos="zoom-in" data-aos-duration="800">
             <h2>Contato</h2>
             <ul class="page-title-link-contact">
-                <li><a href="">HOME</a></li>
-                <li><a href="">CONTATO</a></li>
+                <li><a href="home">HOME</a></li>
+                <li><a href="#">CONTATO</a></li>
             </ul>
         </div>
     </div>

@@ -34,12 +34,12 @@ include('estrutura/head.php');
                 <img src="assets/img/servicos/pintura-epoxi-sobre.jpg" alt="">
             </div>
 
-            <div class="sobre-info-polimento" data-aos="fade-left" data-aos-duration="800">
+            <div class="sobre-info-polimento" data-aos="zoom-in" data-aos-duration="800">
                 <h2 class="sub-title">SOBRE</h2>
                 <h1 class="title btt">Polimento de Piso</h1>
                 <p class="text">O polimento de piso é um processo de renovação que revitaliza o chão de um ambiente, proporcionando uma aparência renovada sem a necessidade de substituir a superfície existente. Essa técnica é especialmente eficaz para pisos duráveis, permitindo a manutenção da estética do ambiente e oferecendo diversas vantagens, evitando a troca por materiais mais resistentes, quando possível.</p>
                 <div class="btn-content">
-                <a href="portfolio" class="btn">Ver Mais </a>
+                <a href="portfolio" class="btn">Ver Mais</a>
                 </div>
             </div>
         </div>

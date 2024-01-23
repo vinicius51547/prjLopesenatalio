@@ -34,7 +34,7 @@ include('estrutura/head.php');
                 <img src="assets/img/servicos/pintura-sobre.jpg" alt="">
             </div>
 
-            <div class="sobre-info-epoxi" data-aos="fade-left" data-aos-duration="800">
+            <div class="sobre-info-epoxi" data-aos="zoom-in" data-aos-duration="800">
                 <h2 class="sub-title">SOBRE</h2>
                 <h1 class="title btt">Pintura Epóxi</h1>
                 <p class="text">
@@ -43,7 +43,7 @@ include('estrutura/head.php');
                     acabamento a pisos de garagens, quadras poliesportivas, salas de cirurgia
                     e clínicas hospitalares.</p>
                 <div class="btn-content">
-                    <a href="portfolio" class="btn">Ver Mais </a>
+                    <a href="portfolio" class="btn">Ver Mais</a>
                 </div>
             </div>
         </div>

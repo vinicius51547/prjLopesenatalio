@@ -33,7 +33,7 @@ include('estrutura/head.php');
                 <img src="assets/img/sobre/img-1.jpg" alt="">
             </div>
 
-            <div class="sobreNos-info" data-aos="fade-left" data-aos-duration="800">
+            <div class="sobreNos-info" data-aos="zoom-in" data-aos-duration="800">
                 <h2 class="sub-title">SOBRE NÓS</h2>
                 <h1 class="title btt">Bem-vindo a Lopesenatalio</h1>
                 <p class="text">
